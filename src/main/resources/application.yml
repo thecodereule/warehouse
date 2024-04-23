@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: warehouse
+  threads:
+    virtual:
+      enabled: true
+  jpa:
+    open-in-view: false
+  cloud:
+    refresh:
+      enabled: false
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
