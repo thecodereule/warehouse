@@ -17,10 +17,12 @@ CREATE TABLE `article`(
     `code` VARCHAR(255),
     `variant` VARCHAR(255),
     `description` VARCHAR(255),
+    `price` DOUBLE,
     `category_id` INT,
     `product_id` INT,
     PRIMARY KEY (`id`),
-    FOREIGN KEY (`product_id`) REFERENCES `product`(`id`)
+    FOREIGN KEY (`product_id`) REFERENCES `product`(`id`),
+    FOREIGN KEY (`category_id`) REFERENCES `category`(`id`)
 );
 
 CREATE TABLE `category`(
@@ -29,7 +31,6 @@ CREATE TABLE `category`(
     `description` VARCHAR(255),
     PRIMARY KEY (`id`)
 );
-
 
 CREATE TABLE `product_trait`(
     `id` INT AUTO_INCREMENT,

@@ -1,0 +1,26 @@
+Sustav za upravljanje skladištem
+Uočavanje glavnih problema i potencijalnih entiteta skladišnog
+sustava
+Kao zadatak izabran je problem opisivanja i izrade sustava upravljanja skladištem. Kako bi
+lakše predočili koji su sve zahtjevi jednog takvog sustava, definirali smo početna ograničenja
+- odnosno, generalne pretpostavke sustava za upravljanje skladištem. Za početak smo
+pretpostavili da se radi o sustavu koji će biti logistička grana globalne e-commerce trgovine,
+tako da samim time možemo pretpostaviti da će takav sustav skladišta biti distribuiran preko
+više lokacija diljem svijeta, te da će svaka lokacija imati određene kvote nekih proizvoda,
+ovisno o prosječnom broju registriranih kupaca unutar teritorija kojega to specifično
+skladište poslužuje. Na taj način, zadaća sustava nije samo obaviti isporuku, nego na
+informiran način donjeti odluke o obnavljanju zalihe artikala ovisno o stanju cijelokupnog
+sustava.
+Kako bi informirano donošenje odluka bilo moguće, potrebno je na raspolaganju imati veliku
+količinu ključnih informacija do kojih možemo što prije i lakše doći kada je potrebno. Prema
+tome, problem nekog logističkog zadatka nije limitiran uvozovm, skladištenjem i izvozom
+artikala proizvoda nekog poslovanja, nego i unosom, skladištenjem i izlazom relevantnih
+podataka.
+Jedan takav sustav mora od početka veoma precizno definirati objekte, te njihova svojstva i
+veze sa ostalim objektima u takvom sustavu. Neki od potencijalnih objekata (entiteta) i bitnih
+svojstava koje možemo prepoznati u takvom sustavu su: Kupac, Radni nalog, Status isporuke,
+Naruđba, Košarica, Kategorije proizvoda, Varijante artikla, Lokacija kupca, Lokacija
+skladišta, Kvantativno stanje svakog artikla.
+Za cilj daljnjih sastanaka tima, imat ćemo konkretno opisati glavne entitete i veze između
+pojedinih entiteta, te dizajnirati dijagrame veza entiteta i izradu skripti i tablica baze
+podataka.
