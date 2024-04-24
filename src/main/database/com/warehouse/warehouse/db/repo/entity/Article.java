@@ -45,4 +45,8 @@ public class Article {
 
     @Column(name = "price")
     private double price;
+
+    @ManyToOne
+    @JoinColumn(name = "warehouse_id")
+    private Warehouse warehouse;
 }
