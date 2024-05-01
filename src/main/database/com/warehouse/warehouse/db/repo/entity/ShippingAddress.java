@@ -6,24 +6,23 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.OneToOne;
 import jakarta.persistence.Table;
-import java.util.List;
 import lombok.Getter;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
-@Table(name = "warehouse")
-public class Warehouse {
+@Table(name = "shipping_address")
+public class ShippingAddress {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @Column(name = "name")
-    private String name;
+    @OneToOne(mappedBy = "shippingAddress")
+    private Customer customer;
 
     @Column(name = "address")
     private String address;
@@ -39,20 +38,4 @@ public class Warehouse {
 
     @Column(name = "country")
     private String country;
-
-    @Column(name = "phone")
-    private String phone;
-
-    @Column(name = "email")
-    private String email;
-
-    @Column(name = "totalCapacity")
-    private Integer totalCapacity;
-
-    @Column(name = "availableCapacity")
-    private Integer availableCapacity;
-
-    @OneToMany(mappedBy = "warehouse")
-    private List<CustomerOrder> orders;
-
 }

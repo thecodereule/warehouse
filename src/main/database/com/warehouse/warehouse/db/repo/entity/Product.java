@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import java.util.List;
 import lombok.Getter;
@@ -36,6 +37,9 @@ public class Product {
 
     @Column(name = "description")
     private String description;
+
+    @OneToMany(mappedBy = "product")
+    private List<Article> articles;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
