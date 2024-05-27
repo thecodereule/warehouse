@@ -1,0 +1,23 @@
+"id","name","description"
+1,Category Name,Category Description
+2,A,Consumer Electronics
+3,A2,Phones and Telecommunication
+4,A3a,Nokia Mobile Phones
+5,A3b,Xiaomi Mobile Phones
+6,A3c,Huawei Mobile Phones
+7,A3d,Apple Mobile Phones
+8,A3e,Samsung Mobile Phones
+9,A3f,LG Mobile Phones
+10,A4,Computers and Tablets
+11,A4a,Desktop Computers
+12,A4b,Laptops
+13,A4c,Tablets
+14,A4d,"2-in-1 Laptops"
+15,A4e,Gaming Laptops
+16,B,Home Appliances
+17,B2,Kitchen Appliances
+18,B2a,Refrigerators
+19,B2b,Ovens
+20,B2c,Microwaves
+21,B2d,Dishwashers
+22,B2e,Toasters

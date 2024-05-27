@@ -1,0 +1,14 @@
+server:
+  address: localhost
+  port: 6701
+
+spring:
+  devtools:
+    livereload:
+      port: 36701
+  datasource:
+    url: ${DB_URL:jdbc:mysql://localhost:3306/warehouse_management}
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:030897}
+  flyway:
+    baseline-on-migrate: true

@@ -1,0 +1,15 @@
+- Kategorije
+- Artikel ID
+- Opcije
+- Odjel
+- Kosarica
+- Status
+- Narudzba
+- Skladiste ID
+- Zaposlenik
+- Kupac
+- Osteceni proizvodi
+- Radni nalog
+- Returns
+- Lokacija kupca
+- Shipping status
